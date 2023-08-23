@@ -33,6 +33,7 @@ p {
 .logo img {
   mix-blend-mode: color-burn;
   border-radius: 10%;
+  height: 80px;
 }
 .container {
   max-width: 1300px;
@@ -258,6 +259,48 @@ ul{
  display: none;
 }
 
+/* All products */
+.row-2{
+  justify-content: space-between;
+  margin: 100px auto 50px;
+}
+select{
+  border: 1px solid #ff523b;
+  padding: 5px ;
+}
+select:focus{
+  outline: none;
+}
+.page-btn{
+  margin: 0 auto 80px;
+}
+.page-btn span{
+  width: 40px;
+  height: 40px;
+  border: 1px solid #ff523b;
+  margin-left: 10px;
+  display: inline-block;
+  text-align: center;
+  line-height: 40px;
+  cursor: pointer;
+}
+.page-btn span:hover{
+  background: #ff523b;
+  color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media only screen and (max-width:800px) {
   nav ul{
     position: absolute;
@@ -285,9 +328,20 @@ ul{
   }
 }
 @media only screen and (max-width:600px){
-  .row{
-    text-align: center;
+  select {
+    width: 150px !important;
   }
+  
+  select option {
+    width: 150px !important;
+  }
+
+
+
+ .row{
+  text-align: center;
+ }
+  
   .col-2, .col-3, .col-4{
     flex-basis: 100%;
   }
