@@ -21,20 +21,28 @@
       <div class="container">
         <div class="navbar">
           <div class="logo">
-            <img src="images/logo.jpg" width="125px" />
+            <a href="index.html">
+              <img src="images/logo.jpg" width="125px"
+            /></a>
           </div>
           <nav>
             <ul id="MenuItems">
-              <li><a href="">Home</a></li>
-              <li><a href="">Products</a></li>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="products.html">Products</a></li>
               <li><a href="">About</a></li>
               <li><a href="">Contact</a></li>
-              <li><a href="">Account</a></li>
+              <li><a href="account.html">Account</a></li>
             </ul>
           </nav>
-          <img src="images/cart.jpg" width="45px" height="40px" />
-          
-          <img src="images/menue.png" class="menue-icon" onclick="menutoggle()">
+          <a href="cart.html">
+            <img src="images/cart.jpg" width="45px" height="40px"
+          /></a>
+
+          <img
+            src="images/menue.png"
+            class="menue-icon"
+            onclick="menutoggle()"
+          />
         </div>
         <div class="row">
           <div class="col-2">
@@ -69,8 +77,8 @@
       <h2 class="title">Featured Products</h2>
       <div class="row">
         <div class="col-4">
-          <img src="images/p5.jpg" />
-          <h4>Gilda Bangle</h4>
+        <a href="product-details.html">  <img src="images/p5.jpg" /></a>
+         <a href="product-details.html"> <h4>Gilda Bangle</h4></a>
           <div class="rating">
             <i class="fa fa-star"></i>
             <i class="fa fa-star"></i>
@@ -81,8 +89,8 @@
           <p>$150.00</p>
         </div>
         <div class="col-4">
-          <img src="images/p6.jpg" />
-          <h4>Orb Bracelent</h4>
+          <a href="product-details.html"><img src="images/p6.jpg" /></a>
+          <a href="product-details.html"></a> <h4>Orb Bracelent</h4></a>
           <div class="rating">
             <i class="fa fa-star"></i>
             <i class="fa fa-star"></i>
@@ -93,8 +101,8 @@
           <p>$100.00</p>
         </div>
         <div class="col-4">
-          <img src="images/p7.jpg" />
-          <h4>Ring Bracelent</h4>
+          <a href="product-details.html">  <img src="images/p7.jpg" /></a>
+          <a href="product-details.html"> <h4>Ring Bracelent</h4></a>
           <div class="rating">
             <i class="fa fa-star"></i>
             <i class="fa fa-star"></i>
@@ -105,8 +113,8 @@
           <p>$250.00</p>
         </div>
         <div class="col-4">
-          <img src="images/p8.jpg" />
-          <h4>Chain</h4>
+          <a href="product-details.html"><img src="images/p8.jpg" /></a>
+          <a href="product-details.html"><h4>Chain</h4></a>
           <div class="rating">
             <i class="fa fa-star"></i>
             <i class="fa fa-star"></i>
@@ -116,7 +124,6 @@
           </div>
           <p>$120.00</p>
         </div>
-       
       </div>
     </div>
 
@@ -231,7 +238,7 @@
               modi.
             </p>
             <div class="app-logo">
-              <img src="images/google play.jpg">
+              <img src="images/google play.jpg" />
             </div>
           </div>
           <div class="footer-col-2">
@@ -251,7 +258,7 @@
             </ul>
           </div>
           <div class="footer-col-4">
-            <h3>Follow us </h3>
+            <h3>Follow us</h3>
             <ul>
               <li>Facebook</li>
               <li>Twitter</li>
@@ -260,25 +267,22 @@
             </ul>
           </div>
         </div>
-        <hr>
-        <p class=" rights">All Rights Reseved</p>
+        <hr />
+        <p class="rights">All Rights Reseved</p>
       </div>
     </div>
     <script>
-      var MenuItems=document.getElementById('MenuItems');
+      var MenuItems = document.getElementById('MenuItems')
 
-      MenuItems.style.maxHeight="0px";
+      MenuItems.style.maxHeight = '0px'
 
-      function menutoggle(){
-        if(MenuItems.style.maxHeight=="0px")
-        {
-          MenuItems.style.maxHeight="200px";
-        }
-        else{
-          MenuItems.style.maxHeight="0px";
+      function menutoggle() {
+        if (MenuItems.style.maxHeight == '0px') {
+          MenuItems.style.maxHeight = '200px'
+        } else {
+          MenuItems.style.maxHeight = '0px'
         }
       }
-
     </script>
   </body>
 </html>
