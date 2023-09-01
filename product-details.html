@@ -37,17 +37,58 @@
       </div>
     </div>
 
+<!-- single product details -->
+
+    <div class="small-container single-product">
+        <div class="row">
+            <div class="col-2">
+                <img src="images/p8.jpg" width="100%" id="ProductImage">
+                <div class="small-img-row">
+                    <div class="small-img-col">
+                        <img src="images/p5.jpg" width="100%" class="small-img">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="images/p8.jpg" width="100%" class="small-img">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="images/p7.jpg" width="100%" class="small-img">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="images/p6.jpg" width="100%" class="small-img">
+                    </div>
+                </div>
+            </div>
+            <div class="col-2">
+                <p>Home / daimond</p>
+                
+                <h1>This new perssing with daimond</h1>
+                <h4>$100.00</h4>
+                <select>
+                    <option>select size</option>
+                    <option>size 1</option>
+                    <option>size 2</option>
+                    <option>size 3</option>
+                </select>
+                <input type="number" value="1">
+                <a href="" class="btn">Add to cart</a>
+                 <h3>Product Details <i class="fa fa-indent"></i></h3>
+                 <br/>
+                 <p>Lorem ipsum dolor  Dignissimos saepe nulla optio quo!</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- title -->
+<div class="small-container">
+    <div class="row row-2">
+        <h2>Related Product</h2>
+        <p>View More</p>
+    </div>
+</div>
+
+    <!-- products -->
     <div class="small-container">
-      <div class="row row-2">
-        <h2>All products</h2>
-        <select>
-          <option>Default Choice</option>
-          <option>choice by price</option>
-          <option>choice by popylarity</option>
-          <option>choice by rating</option>
-          <option>choice by sale</option>
-        </select>
-      </div>
+      
 
       <div class="row">
         <div class="col-4">
@@ -98,62 +139,11 @@
           </div>
           <p>$120.00</p>
         </div>
-        <div class="col-4">
-          <img src="images/p1.jpg" />
-          <h4>Gilda Bangle</h4>
-          <div class="rating">
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star-half-alt"></i>
-          </div>
-          <p>$150.00</p>
-        </div>
-        <div class="col-4">
-          <img src="images/p2.jpg" />
-          <h4>Gilda Bangle</h4>
-          <div class="rating">
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star-half-alt"></i>
-          </div>
-          <p>$150.00</p>
-        </div>
-        <div class="col-4">
-          <img src="images/p3.jpg" />
-          <h4>Gilda Bangle</h4>
-          <div class="rating">
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star-half-alt"></i>
-          </div>
-          <p>$150.00</p>
-        </div>
-        <div class="col-4">
-          <img style="height: 238px" src="images/p10.jpg" />
-          <h4>Gilda Bangle</h4>
-          <div class="rating">
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star-half-alt"></i>
-          </div>
-          <p>$150.00</p>
+       
+       
         </div>
       </div>
-      <div class="page-btn">
-        <span>1</span>
-        <span>2</span>
-        <span>3</span>
-        <span>4</span>
-        <span>&#8594;</span>
-      </div>
+      
     </div>
 
     <!-- Footer -->
@@ -200,6 +190,7 @@
         <p class="rights">All Rights Reseved</p>
       </div>
     </div>
+    <!-- Js for toggle menue -->
     <script>
       var MenuItems = document.getElementById('MenuItems')
 
@@ -213,5 +204,29 @@
         }
       }
     </script>
+
+    <!-- Js for product gallery -->
+
+    <script>
+        var ProductImg=document.getElementById('ProductImage');
+        var SmallImg=document.getElementsByClassName('small-img');
+
+        SmallImg[0].onclick=function (){
+          ProductImg.src=SmallImg[0].src
+        }
+        SmallImg[1].onclick=function()
+        {
+            ProductImg.src=SmallImg[1].src
+        }
+        SmallImg[2].onclick=function()
+        {
+            ProductImg.src=SmallImg[2].src
+        }
+        SmallImg[3].onclick=function()
+        {
+            ProductImg.src=SmallImg[3].src
+        }
+    </script>
+
   </body>
 </html>
